@@ -19,7 +19,7 @@ export default function InfoBox({info}){
   <div className="cardContainer"> 
       <Card sx={{ MaxWidth: 800 }}>
       <CardMedia
-        sx={{ height: 300 }}
+        sx={{ height: 200 }}
         image={info.humidity > 80 ? RAIN_URL:info.temp>15?HOT_URL:COLD_URL} //logic for changing image based upon humidity and temperature
         title="green iguana"
       />
