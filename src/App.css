@@ -1,15 +1,13 @@
-
 #root {
-  max-width: 90%;           
-  margin: 2rem auto;
-  padding: 2rem 1rem;
+  max-width: 80%;
+  margin: 1.28rem auto;         /* 2rem × 0.64 = 1.28rem */
+  padding: 0.96rem 1rem;        /* 1.5rem × 0.64 = 0.96rem vertical, horizontal stays 1rem */
   text-align: center;
   background-color: rgba(255, 250, 240, 0.85);
   border-radius: 14px;
   border: 1px solid black;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
 
 body {
   background-image: url("weatherimg.avif");
@@ -20,18 +18,18 @@ body {
   margin: 0;
 }
 
-
+/* Medium screens */
 @media (min-width: 768px) {
   #root {
-    max-width: 700px;
-    padding: 3rem;
+    max-width: 400px;
+    padding: 0.96rem;           /* 1.5rem × 0.64 = 0.96rem */
   }
 }
 
+/* Large screens */
 @media (min-width: 1024px) {
   #root {
-    max-width: 1000px;
-    padding: 4rem;
+    max-width: 420px;
+    padding: 0.96rem;           /* 1.5rem × 0.64 = 0.96rem */
   }
 }
-
